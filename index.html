@@ -16,14 +16,27 @@
         <p>This app will help you rate your favorite footballers and decide who is the best of all time!</p>
         <p>No bias, no favoritism, just pure stats and facts.</p>
     </div>
-    <img id="im1" src="Images/cr7.jpeg" alt="Ronaldo">
     <div>
-        <h2>Rate your favorite footballers</h2>
+        <div id="players-details">
+            <div id="nameAndClub">
+                <h3>Name:</h3>
+                <h3>Current Club:</h3>
+            </div>
+            <h3 id="player-stats">Stats:</h3>
+        <img id="im1" src="Images/cr7.jpeg" alt="Ronaldo">
+        </div>
+        <h3 style="text-align: center;">Rating:</h3>
+    </div>
+    <div>
+    
         <form id="rates-form">
+            <h2>Rate your favorite footballers</h2>
             <label for="pname">Player's Full Name:</label><br>
             <input type="text" id="pname" name="pname"><br>
             <label for="cclub">Player's Current Club:</label><br>
             <input type="text" id="cclub" name="cclub"><br>
+            <label for="pimage">Player's Image:</label><br>
+            <input type="url" id="pimage" name="pimage"><br>
             <h3>Player's FIFA Stats </h3>
             <label for="pac">Pace:</label><br>
             <input type="text" id="pac" name="pac"><br>
