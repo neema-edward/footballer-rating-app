@@ -1,0 +1,29 @@
+{
+    "players": [
+     {
+       "id": 1,
+       "Player's Full Name": "Cristiano Ronaldo",
+       "Player's Current Club": "Al-Nassr",
+       "Player's Image": "https://i.pinimg.com/736x/5f/9c/fb/5f9cfb5435cc38b42750e5859be6c7eb.jpg",
+       "Pace": 77,
+       "Shooting": 88,
+        "Passing": 77,
+        "Dribbling": 80,
+        "Defence": 34,
+        "Physical": 77
+     },
+     {
+        "id": 2,
+        "Player's Full Name": "Lionel Messi",
+        "Player's Current Club": "Inter Miami",
+        "Player's Image": "https://i.pinimg.com/236x/e9/f1/ac/e9f1ac1be3e35d62c72f2118af3da92d.jpg",
+        "Pace": 70,
+        "Shooting": 90,
+         "Passing": 69,
+         "Dribbling": 74,
+         "Defence": 40,
+         "Physical": 50
+      }
+   
+    ]
+   }
