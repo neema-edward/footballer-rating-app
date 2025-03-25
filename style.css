@@ -1,0 +1,11 @@
+/* .container {
+    background-image: url('Images/pitch.jpeg');
+} */
+
+#im1 {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 10px;
+}

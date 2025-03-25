@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="container">
     <div>
         <h1>FOOTBALLER RATING APP</h1>
     </div>
@@ -15,7 +15,30 @@
         <p>This app will help you rate your favorite footballers and decide who is the best of all time!</p>
         <p>No bias, no favoritism, just pure stats and facts.</p>
     </div>
-    
+    <img id="im1" src="Images/cr7.jpeg" alt="Ronaldo">
+    <div>
+        <h2>Rate your favorite footballers</h2>
+        <form id="rates-form">
+            <label for="pname">Player's Full Name:</label><br>
+            <input type="text" id="pname" name="pname"><br>
+            <label for="cclub">Player's Current Club:</label><br>
+            <input type="text" id="cclub" name="cclub"><br>
+            <h3>Player's FIFA Stats </h3>
+            <label for="pac">Pace:</label><br>
+            <input type="text" id="pac" name="pac"><br>
+            <label for="sho">Shooting:</label><br>
+            <input type="text" id="sho" name="sho"><br>
+            <label for="pas">Passing:</label><br>
+            <input type="text" id="pas" name="pas"><br>
+            <label for="dri">Dribbling:</label><br>
+            <input type="text" id="dri" name="dri"><br>
+            <label for="def">Defence:</label><br>
+            <input type="text" id="def" name="def"><br>
+            <label for="phy">Physical:</label><br>
+            <input type="text" id="phy" name="phy"><br>
+            <button id="add players">Add Player</button>
+        </form>
+
     <script src="script.js" defer></script>
 </body>
 </html>
