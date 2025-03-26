@@ -1,17 +1,10 @@
 const baseURL = "http://localhost:3000/players";
 
-const playerMenu = document.getElementById('player-menu');
-
-function displayPlayers() {
-    for(let a of players){
-        let createdImage = document.createElement('img');
-        createdImage.src = a.image;
-        createdImage.alt = a.name;
-        createdImage.classList.add('image-container');         
-        
-        
-        playerMenu.appendChild(createdImage);
-    }
-}
-
-displayPlayers();
+const playerName = document.getElementById("pname");
+const playerCurrentClub = document.getElementById("pcurrent-club");
+const playerPace = document.getElementById("ppace");
+const playerShooting = document.getElementById("pshooting");
+const playerPassing = document.getElementById("ppassing");
+const playerDribbling = document.getElementById("pdribbling");
+const playerDefence = document.getElementById("pdefence");
+const playerPhysical = document.getElementById("pphysical");
