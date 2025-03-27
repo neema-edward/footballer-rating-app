@@ -1,29 +1,40 @@
 {
-    "players": [
-     {
-       "id": 1,
-       "Player's Full Name": "Cristiano Ronaldo",
-       "Player's Current Club": "Al-Nassr",
-       "Player's Image": "https://i.pinimg.com/736x/5f/9c/fb/5f9cfb5435cc38b42750e5859be6c7eb.jpg",
-       "Pace": 77,
-       "Shooting": 88,
-        "Passing": 77,
-        "Dribbling": 80,
-        "Defence": 34,
-        "Physical": 77
-     },
-     {
-        "id": 2,
-        "Player's Full Name": "Lionel Messi",
-        "Player's Current Club": "Inter Miami",
-        "Player's Image": "https://i.pinimg.com/236x/e9/f1/ac/e9f1ac1be3e35d62c72f2118af3da92d.jpg",
-        "Pace": 70,
-        "Shooting": 90,
-         "Passing": 69,
-         "Dribbling": 74,
-         "Defence": 40,
-         "Physical": 50
-      }
-   
-    ]
-   }
+  "players": [
+    {
+      "id": "1",
+      "Player's Full Name": "Cristiano Ronaldo",
+      "Player's Current Club": "Al-Nassr",
+      "Player's Image": "https://specials-images.forbesimg.com/imageserve/67a364b911e7d1d44433d4be/960x0.jpg",
+      "Pace": 77,
+      "Shooting": 88,
+      "Passing": 77,
+      "Dribbling": 80,
+      "Defence": 34,
+      "Physical": 77
+    },
+    {
+      "id": "2",
+      "Player's Full Name": "Lionel Messi",
+      "Player's Current Club": "Inter Miami",
+      "Player's Image": "https://specials-images.forbesimg.com/imageserve/678519081d452d5e4fe14ee7/960x0.jpg",
+      "Pace": 70,
+      "Shooting": 90,
+      "Passing": 69,
+      "Dribbling": 74,
+      "Defence": 40,
+      "Physical": 50
+    },
+    {
+      "id": 3,
+      "Player's Full Name": "Kylian Mbappe",
+      "Player's Current Club": "Real Madrid",
+      "Player's Image": "https://imageio.forbes.com/specials-images/imageserve/626c7cf3616c1112ae834a2b/0x0.jpg?format=jpg&crop=1603,1603,x1533,y577,safe&height=416&width=416&fit=bounds",
+      "Pace": 97,
+      "Shooting": 90,
+      "Passing": 80,
+      "Dribbling": 92,
+      "Defence": 36,
+      "Physical": 78
+    }
+  ]
+}
