@@ -14,3 +14,7 @@ const form = document.getElementById("rates-form");
 
 let players = [];
 let currentPlayer = 0;
+
+function showPlayer() {
+    let player = players[currentPlayer];
+}
