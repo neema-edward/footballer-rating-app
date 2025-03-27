@@ -38,5 +38,29 @@ console.log("Showing player:". player)
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
-}
-)
+    let newPlayer = {
+        id: players.length + 1,
+        "Player's Full Name": document.getElementById("pname").value,
+        "Player's Current Club": document.getElementById("cclub").value,
+        "Player's Image": document.getElementById("pimage"),
+        Pace: Number(document.getElementById("pac").value),
+        Shooting: Number(document.getElementById("sho").value),
+        Passing: Number(document.getElementById("pas").value),
+        Dribbling: Number(document.getElementById("dri").value),
+        Defence: Number(document.getElementById("def").value),
+        Physical: Number(document.getElementById("phy").value),
+    };
+    fetch(baseURL, {
+        method: "POST",
+        headers: { "Content-Type": "appliation/json" },
+        body: JSON.stringify(newPlayer),
+    })
+    .then((response) => response.json())
+    .then((player) => {
+        players.push(player);
+        currentPlayer = players.length -1;
+        showPlayer();
+        form.reset();
+    });
+});
+
