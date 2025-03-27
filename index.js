@@ -18,3 +18,13 @@ let currentPlayer = 0;
 function showPlayer() {
     let player = players[currentPlayer];
 }
+
+playerName.textContent = player["Player's Full Name"];
+playerClub.textContent = player["Player's Current Club"];
+playerPace.textContent = "Pace: " + player.Pace;
+playerShooting.textContent = "Shooting: " + player.Shooting;
+playerPassing.textContent = "Passing: " + player.Passing;
+playerDribbling.textContent = "Dribbling: " + player.Dribbling;
+playerDefence.textContent = "Defence: " + player.Defence;
+playerPhysical.textContent = "Physical: " + player.Physical;
+
