@@ -29,3 +29,7 @@ playerDefence.textContent = "Defence: " + player.Defence;
 playerPhysical.textContent = "Physical: " + player.Physical;
 
 playerImage.src = player["Player's Image"];
+
+let total = player.Pace + player.Shooting + player.Passing + player.Dribbling + player.Defence + player.Physical;
+let rating = Math.round(total/6)
+playerRating.textContent = rating;
