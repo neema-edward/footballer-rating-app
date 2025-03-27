@@ -28,3 +28,4 @@ playerDribbling.textContent = "Dribbling: " + player.Dribbling;
 playerDefence.textContent = "Defence: " + player.Defence;
 playerPhysical.textContent = "Physical: " + player.Physical;
 
+playerImage.src = player["Player's Image"];
