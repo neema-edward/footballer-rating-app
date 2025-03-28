@@ -17,8 +17,6 @@ let currentPlayer = 0;
 
 function showPlayer() {
     let player = players[currentPlayer];
-}
-
 playerName.textContent = player["Player's Full Name"];
 playerClub.textContent = player["Player's Current Club"];
 playerPace.textContent = "Pace: " + player.Pace;
@@ -34,7 +32,8 @@ let total = player.Pace + player.Shooting + player.Passing + player.Dribbling + 
 let rating = Math.round(total/6)
 playerRating.textContent = rating;
 
-console.log("Showing player:". player)
+console.log("Showing player:", player);
+}
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -42,7 +41,7 @@ form.addEventListener("submit", function (event) {
         id: players.length + 1,
         "Player's Full Name": document.getElementById("pname").value,
         "Player's Current Club": document.getElementById("cclub").value,
-        "Player's Image": document.getElementById("pimage"),
+        "Player's Image": document.getElementById("pimage").value,
         Pace: Number(document.getElementById("pac").value),
         Shooting: Number(document.getElementById("sho").value),
         Passing: Number(document.getElementById("pas").value),
@@ -52,7 +51,7 @@ form.addEventListener("submit", function (event) {
     };
     fetch(baseURL, {
         method: "POST",
-        headers: { "Content-Type": "appliation/json" },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newPlayer),
     })
     .then((response) => response.json())
@@ -63,14 +62,13 @@ form.addEventListener("submit", function (event) {
         form.reset();
     });
 });
-// Load players and set up buttons
+
 fetch(baseURL)
   .then((response) => response.json())
   .then((data) => {
     players = data;
-    showPlayer(); // Show the first player
+    showPlayer(); 
 
-    // Add buttons
     let buttons = document.createElement("div");
     buttons.innerHTML = `
       <button id="prev">Previous</button>
@@ -78,7 +76,7 @@ fetch(baseURL)
     `;
     document.querySelector(".headers").appendChild(buttons);
 
-    // Next button
+ 
     document.getElementById("next").addEventListener("click", function () {
       if (currentPlayer < players.length - 1) {
         currentPlayer = currentPlayer + 1;
@@ -86,7 +84,6 @@ fetch(baseURL)
       }
     });
 
-    // Previous button
     document.getElementById("prev").addEventListener("click", function () {
       if (currentPlayer > 0) {
         currentPlayer = currentPlayer - 1;
@@ -94,4 +91,5 @@ fetch(baseURL)
       }
     });
 })
+
 

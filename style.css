@@ -39,6 +39,16 @@
    
 }
 
+#prev {
+    /* position: absolute; */
+    left: 20%;
+}
+
+#next {
+    /* position: absolute; */
+    left: 25%;
+}
+
 .headers {
     color: white;
 }
@@ -47,4 +57,9 @@ label {
     color: black;
     font-size: larger;
     background-color: auto;
+}
+
+.ratingg {
+    color: black;
+    text-align: center;
 }

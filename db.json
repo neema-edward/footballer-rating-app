@@ -23,6 +23,18 @@
       "Dribbling": 74,
       "Defence": 40,
       "Physical": 50
+    },
+    {
+      "id": 3,
+      "Player's Full Name": "Kylian Mbappe",
+      "Player's Current Club": "Real Madrid",
+      "Player's Image": "https://imageio.forbes.com/specials-images/imageserve/626c7cf3616c1112ae834a2b/0x0.jpg?format=jpg&crop=1603,1603,x1533,y577,safe&height=416&width=416&fit=bounds",
+      "Pace": 97,
+      "Shooting": 90,
+      "Passing": 80,
+      "Dribbling": 92,
+      "Defence": 36,
+      "Physical": 78
     }
   ]
 }
