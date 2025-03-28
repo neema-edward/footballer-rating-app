@@ -63,4 +63,35 @@ form.addEventListener("submit", function (event) {
         form.reset();
     });
 });
+// Load players and set up buttons
+fetch(baseURL)
+  .then((response) => response.json())
+  .then((data) => {
+    players = data;
+    showPlayer(); // Show the first player
+
+    // Add buttons
+    let buttons = document.createElement("div");
+    buttons.innerHTML = `
+      <button id="prev">Previous</button>
+      <button id="next">Next</button>
+    `;
+    document.querySelector(".headers").appendChild(buttons);
+
+    // Next button
+    document.getElementById("next").addEventListener("click", function () {
+      if (currentPlayer < players.length - 1) {
+        currentPlayer = currentPlayer + 1;
+        showPlayer();
+      }
+    });
+
+    // Previous button
+    document.getElementById("prev").addEventListener("click", function () {
+      if (currentPlayer > 0) {
+        currentPlayer = currentPlayer - 1;
+        showPlayer();
+      }
+    });
+})
 
