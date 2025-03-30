@@ -35,6 +35,18 @@
       "Dribbling": 92,
       "Defence": 36,
       "Physical": 78
+    },
+    {
+      "id": 4,
+      "Player's Full Name": "Neymar Jr",
+      "Player's Current Club": "Santos",
+      "Player's Image": "https://imageio.forbes.com/specials-images/imageserve/663e62cdf58e56a7e766df10/0x0.jpg?format=jpg&crop=1846,1847,x0,y69,safe&height=416&width=416&fit=bounds",
+      "Pace": 70,
+      "Shooting": 83,
+      "Passing": 72,
+      "Dribbling": 90,
+      "Defence": 40,
+      "Physical": 80
     }
   ]
 }

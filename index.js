@@ -63,6 +63,7 @@ form.addEventListener("submit", function (event) {
     });
 });
 
+
 fetch(baseURL)
   .then((response) => response.json())
   .then((data) => {
@@ -90,6 +91,20 @@ fetch(baseURL)
         showPlayer();
       }
     });
+
+    let bestPlayer = players[0];
+    let bestRating = 0;
+    for (let i = 0; i < players.length; i++) {
+      let total = players[i].Pace + players[i].Shooting + players[i].Passing + players[i].Dribbling + players[i].Defence + players[i].Physical;
+      let rating = Math.round(total / 6);
+      if (rating > bestRating) {
+        bestRating = rating;
+        bestPlayer = players[i];
+      }
+    }
+    let goatText = document.createElement("p");
+    goatText.textContent = "The G.O.A.T: " + bestPlayer["Player's Full Name"] + " (Rating: " + bestRating + ")";
+    document.querySelector(".headers").appendChild(goatText);
 })
 
 
